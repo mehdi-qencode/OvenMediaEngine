@@ -260,6 +260,38 @@
 								-->
 							</Encodes>
 						</OutputProfile>
+						<OutputProfile>
+							<Name></Name>
+							<OutputStreamName></OutputStreamName>
+							<Encodes>
+								<Audio>
+									<Codec>aac</Codec>
+									<Bitrate>128000</Bitrate>
+									<Samplerate>48000</Samplerate>
+									<Channel>2</Channel>
+								</Audio>
+								<Video>
+									<Codec>h264</Codec>
+									<Minrate>1K</Minrate>
+									<Maxrate>2K</Maxrate>
+									<BufferSize>2K</BufferSize>
+									<MaxBframes>30</MaxBframes>
+									<PixFormat>yuv422p</PixFormat>
+									<ThreadCount>4</ThreadCount>
+									<Profile>main</Profile>
+									<Preset>veryfast</Preset>
+									<Tune>film</Tune>
+									<CodecOptions>bframes=0:sliced-threads=0:b-adapt=1:no-scenecut:keyint=30:min-keyint=30</CodecOptions>
+									<Bitrate>1024000</Bitrate>
+									<Framerate>30</Framerate>
+									<GOPSize>100</GOPSize>
+									<!-- <KeyFrameMultiplier>2.0</KeyFrameMultiplier> -->
+									<Width>1280</Width>
+									<Height>720</Height>
+									<AspectRatio>16:9</AspectRatio>
+								</Video>
+							</Encodes>
+						</OutputProfile>
 					</OutputProfiles>
 					<Providers>
 						<OVT />
@@ -294,6 +326,14 @@
 							<Timeout>30000</Timeout>
 							<Rtx>true</Rtx>
 							<Ulpfec>true</Ulpfec>
+<!--							<ResolutionVariants>-->
+<!--								<Variant>-->
+<!--									<widght></widght>-->
+<!--									<height></height>-->
+<!--									<bitrate></bitrate>-->
+<!--									<framerate></framerate>-->
+<!--								</Variant>-->
+<!--							</ResolutionVariants>-->
 						</WebRTC>
 						<HLS>
 							<SegmentDuration>5</SegmentDuration>
